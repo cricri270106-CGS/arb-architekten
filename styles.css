@@ -242,7 +242,7 @@ h2.display.small { font-size: clamp(2rem, 3.6vw, 3rem); }
 }
 .card:hover .card-open, .card:focus-visible .card-open { opacity: 1; transform: none; }
 .card-body { display: flex; justify-content: space-between; gap: 16px; padding: 14px 2px 0; }
-.card-title { min-width: 0; overflow-wrap: break-word; hyphens: auto; font-weight: 600; font-size: .98rem; line-height: 1.35; }
+.card-title { min-width: 0; overflow-wrap: break-word; font-weight: 600; font-size: .98rem; line-height: 1.35; }
 .card-year { color: var(--muted); font-size: .85rem; font-variant-numeric: tabular-nums; flex: none; }
 
 .feat-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 28px 22px; }
@@ -479,6 +479,9 @@ h2.display.small { font-size: clamp(2rem, 3.6vw, 3rem); }
   .feat-grid > li:nth-child(1) { grid-column: 1 / -1; }
   .feat-grid > li:nth-child(1) .card-media { height: auto; min-height: 0; aspect-ratio: 16 / 10; }
   .pf-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 14px; }
+  .card-body { flex-direction: column; gap: 2px; }
+  .card-title { font-size: .9rem; }
+  .card-year { font-size: .8rem; }
   .team-grid, .team-grid.team-small { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .steps { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); row-gap: 44px; }
   .steps::before { display: none; }
